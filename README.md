@@ -1,2 +1,2 @@
 # calculadoraIMC
-App con PHP que calcula el IMC
+App sencilla con PHP que calcula el IMC corporal.
