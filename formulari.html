@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Salut i Benestar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Calculadora de Salut i Benestar</h1>
+    <form action="calculasalut.php" method="POST">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="cognoms">Cognoms:</label>
+        <input type="text" id="cognoms" name="cognoms" required>
+
+        <label for="correu">Correu electrònic:</label>
+        <input type="email" id="correu" name="correu" required>
+
+        <label for="sexe">Sexe:</label>
+        <select id="sexe" name="sexe" required>
+            <option value="Home">Home</option>
+            <option value="Dona">Dona</option>
+        </select>
+
+        <label for="pes">Pes (kg):</label>
+        <input type="number" id="pes" name="pes" step="0.1" required>
+
+        <label for="alçada">Alçada (cm):</label>
+        <input type="number" id="alçada" name="alçada" step="0.1" required>
+
+        <label for="edat">Edat:</label>
+        <input type="number" id="edat" name="edat" required>
+
+        <label for="activitat">Nivell d'activitat física:</label>
+        <select id="activitat" name="activitat" required>
+            <option value="Sedentari">Sedentari</option>
+            <option value="Moderat">Moderat</option>
+            <option value="Alt">Alt</option>
+        </select>
+
+        <label for="comunitat">Comunitat Autònoma:</label>
+        <select id="comunitat" name="comunitat" required>
+            <option value="Andalucía">Andalucía</option>
+            <option value="Aragón">Aragó</option>
+            <option value="Illes Balears">Illes Balears</option>
+            <option value="Canarias">Canàries</option>
+            <option value="Cantabria">Cantàbria</option>
+            <option value="Castilla-La Mancha">Castilla-La Mancha</option>
+            <option value="Castilla y León">Castilla y León</option>
+            <option value="Cataluña">Catalunya</option>
+            <option value="Comunidad de Madrid">Comunitat de Madrid</option>
+            <option value="Navarra">Navarra</option>
+            <option value="Comunidad Valenciana">Comunitat Valenciana</option>
+            <option value="Extremadura">Extremadura</option>
+            <option value="Galicia">Galicia</option>
+            <option value="País Vasco">País Vasc</option>
+            <option value="Asturias">Astúries</option>
+            <option value="Murcia">Murcia</option>
+            <option value="La Rioja">La Rioja</option>
+        </select>
+
+        <input type="submit" value="Calcular">
+    </form>
+</body>
+</html>
